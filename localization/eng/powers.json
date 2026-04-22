@@ -1,0 +1,16 @@
+{
+  "LIBERATE_THE_SPIRE-FREE_GRENADE_POWER.description": "The next {Amount} grenades you play are free",
+  "LIBERATE_THE_SPIRE-FREE_GRENADE_POWER.smartDescription": "The next {Amount} grenades you play are free",
+  "LIBERATE_THE_SPIRE-FREE_GRENADE_POWER.title": "Grenades!",
+
+
+
+  "LIBERATE_THE_SPIRE-WARP_POWER.description": "At the end of your turn, take 5 damage and shuffle a [gold]Wound[/gold] into your draw pile.",
+  "LIBERATE_THE_SPIRE-WARP_POWER.smartDescription": "At the end of your turn, take 5 damage and shuffle a [gold]Wound[/gold] into your draw pile.",
+  "LIBERATE_THE_SPIRE-WARP_POWER.title": "Overcharge",
+
+
+  "LIBERATE_THE_SPIRE-BURN_POWER.description": "",
+  "LIBERATE_THE_SPIRE-BURN_POWER.smartDescription": "",
+  "LIBERATE_THE_SPIRE-BURN_POWER.title": "Burning"
+}
