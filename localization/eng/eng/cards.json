@@ -1,0 +1,189 @@
+{
+  "LIBERATE_THE_SPIRE-LIBERATOR.title": "Liberator",
+  "LIBERATE_THE_SPIRE-LIBERATOR.description": "Deal {Damage:diff()} damage.",
+  "LIBERATE_THE_SPIRE-LIBERATOR.upgraded_description": "Deal {Damage:diff()} damage.",
+
+  "LIBERATE_THE_SPIRE-H_E_GRENADE.title": "HE Grenade",
+  "LIBERATE_THE_SPIRE-H_E_GRENADE.description": "Deal {Damage:diff()} damage to all enemies.",
+  "LIBERATE_THE_SPIRE-H_E_GRENADE.upgraded_description": "Deal {Damage:diff()} damage to all enemies.",
+  
+  "LIBERATE_THE_SPIRE-RESUPPLY.title": "Resupply",
+  "LIBERATE_THE_SPIRE-RESUPPLY.description": "Shuffle all cards with [gold]Resupply[/gold] from your exhaust pile into your draw pile.",
+
+  
+  "LIBERATE_THE_SPIRE-STIM.title": "Stim",
+  "LIBERATE_THE_SPIRE-STIM.description": "Heal {Heal:diff()}. Gain {RegenPower:diff()} [gold]Regen[/gold].",
+  "LIBERATE_THE_SPIRE-STIM.upgraded_description": "Heal {Heal:diff()}. Gain {RegenPower:diff()} [gold]Regen[/gold].",
+
+  "LIBERATE_THE_SPIRE-EAGLE_STRAFING_RUN.title": "Eagle Strafing Run",
+  "LIBERATE_THE_SPIRE-EAGLE_STRAFING_RUN.description": "Deal {Damage:diff()} damage to all enemies.",
+  "LIBERATE_THE_SPIRE-EAGLE_STRAFING_RUN.upgraded_description": "Deal {Damage:diff()} damage to all enemies.",
+
+  "LIBERATE_THE_SPIRE-EAGLE_RE_ARM.title": "Eagle Re-Arm",
+  "LIBERATE_THE_SPIRE-EAGLE_RE_ARM.description": "Shuffle all cards with [gold]ReArm[/gold] from your exhaust pile into your draw pile.",
+
+  
+  
+  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.title": "Liberator Carbine",
+  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Draw {Cards:diff()} cards.",
+  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Draw {Cards:diff()} cards.",
+  
+  "LIBERATE_THE_SPIRE-REDEEMER.title": "Redeemer",
+  "LIBERATE_THE_SPIRE-REDEEMER.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "LIBERATE_THE_SPIRE-REDEEMER.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+
+  "LIBERATE_THE_SPIRE-M_G_43.title": "MG-43",
+  "LIBERATE_THE_SPIRE-M_G_43.description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Apply {WeakPower:diff()} [gold]Weak[/gold]",
+  "LIBERATE_THE_SPIRE-M_G_43.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Apply {WeakPower:diff()} [gold]Weak[/gold]",
+
+  "LIBERATE_THE_SPIRE-PRONE.title": "Prone",
+  "LIBERATE_THE_SPIRE-PRONE.description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.",
+  "LIBERATE_THE_SPIRE-PRONE.upgraded_description": "Gain {Block:diff()} [gold]Block[/gold]. Gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.",
+  
+  
+  "LIBERATE_THE_SPIRE-STALWART.title": "Stalwart",
+  "LIBERATE_THE_SPIRE-STALWART.description": "Deal {Damage:diff()} damage {Repeat:diff()} times to all enemies.",
+  "LIBERATE_THE_SPIRE-STALWART.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times to all enemies.",
+
+  "LIBERATE_THE_SPIRE-AMMUNITION_REDESIGN.title": "Ammunition Redesign",
+  "LIBERATE_THE_SPIRE-AMMUNITION_REDESIGN.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold]. Increase the cost of this card by 1 this combat.",
+
+  
+  "LIBERATE_THE_SPIRE-MAXIGUN.title": "Maxigun",
+  "LIBERATE_THE_SPIRE-MAXIGUN.description": "Deal {Damage:diff()} damage 2X times.",
+  "LIBERATE_THE_SPIRE-MAXIGUN.upgraded_description": "Deal {Damage:diff()} damage 2X times.",
+
+
+  "LIBERATE_THE_SPIRE-SEAF_ARTILLERY.title": "SEAF Artillery",
+  "LIBERATE_THE_SPIRE-SEAF_ARTILLERY.description": "Shuffle 5 {IfUpgraded:show:[gold]upgraded [/gold]}SEAF Artillery Shells into your draw pile.",
+  "LIBERATE_THE_SPIRE-SEAF_ARTILLERY.upgraded_description": "Shuffle 5 {IfUpgraded:show:[gold]upgraded [/gold]}SEAF Artillery Shells into your draw pile.",
+
+
+  "LIBERATE_THE_SPIRE-MINI_NUKE.title": "Mini Nuke",
+  "LIBERATE_THE_SPIRE-MINI_NUKE.description": "Deal {Damage:diff()} damage to all enemies.",
+  "LIBERATE_THE_SPIRE-MINI_NUKE.upgraded_description": "Deal {Damage:diff()} damage to all enemies.",
+
+  "LIBERATE_THE_SPIRE-HIGH_YIELD_EXPLOSIVE.title": "High Yield Explosive",
+  "LIBERATE_THE_SPIRE-HIGH_YIELD_EXPLOSIVE.description": "Deal {Damage:diff()} damage to all enemies.",
+  "LIBERATE_THE_SPIRE-HIGH_YIELD_EXPLOSIVE.upgraded_description": "Deal {Damage:diff()} damage to all enemies.",
+  
+  "LIBERATE_THE_SPIRE-EXPLOSIVE.title": "Explosive",
+  "LIBERATE_THE_SPIRE-EXPLOSIVE.description": "Deal {Damage:diff()} damage to all enemies.",
+  "LIBERATE_THE_SPIRE-EXPLOSIVE.upgraded_description": "Deal {Damage:diff()} damage to all enemies.",
+
+  "LIBERATE_THE_SPIRE-NAPALM.title": "Napalm",
+  "LIBERATE_THE_SPIRE-NAPALM.description": "Deal {Damage:diff()} damage to all enemies. Apply {BurnPower:diff()} [gold]burn[/gold] to all enemies.",
+  "LIBERATE_THE_SPIRE-NAPALM.upgraded_description": "Deal {Damage:diff()} damage to all enemies. Apply {BurnPower:diff()} [gold]burn[/gold] to all enemies.",
+  
+  "LIBERATE_THE_SPIRE-GAS.title": "Gas",
+  "LIBERATE_THE_SPIRE-GAS.description": "Deal {Damage:diff()} damage to all enemies. Apply {PoisonPower:diff()} [gold]Poison[/gold] to all enemies.",
+  "LIBERATE_THE_SPIRE-GAS.upgraded_description": "Deal {Damage:diff()} damage to all enemies. Apply {PoisonPower:diff()} [gold]Poison[/gold] to all enemies.",
+
+  "LIBERATE_THE_SPIRE-SMOKE.title": "Smoke",
+  "LIBERATE_THE_SPIRE-SMOKE.description": "The Ministry of Truth declares there is nothing wrong with this shell",
+  
+
+  "LIBERATE_THE_SPIRE-STATIC_FIELD.title": "Static Field",
+  "LIBERATE_THE_SPIRE-STATIC_FIELD.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] to all enemies.",
+  "LIBERATE_THE_SPIRE-STATIC_FIELD.upgraded_description": "Apply {WeakPower:diff()} [gold]Weak[/gold] to all enemies.",
+  
+  
+  
+  "LIBERATE_THE_SPIRE-GRENADE_PISTOL.title": "Grenade Pistol",
+  "LIBERATE_THE_SPIRE-GRENADE_PISTOL.description": "Deal {Damage:diff()} damage to all enemies. The next [gold]Grenade[/gold] you play is free.",
+  "LIBERATE_THE_SPIRE-GRENADE_PISTOL.upgraded_description": "Deal {Damage:diff()} damage to all enemies. The next [gold]Grenade[/gold] you play is free.",
+  
+  "LIBERATE_THE_SPIRE-GAS_GRENADE.title": "Gas Grenade",
+  "LIBERATE_THE_SPIRE-GAS_GRENADE.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold] to all enemies.",
+  "LIBERATE_THE_SPIRE-GAS_GRENADE.upgraded_description": "Apply {PoisonPower:diff()} [gold]Poison[/gold] to all enemies.",
+
+
+  
+
+  "LIBERATE_THE_SPIRE-ONE_TWO.title": "One-Two",
+  "LIBERATE_THE_SPIRE-ONE_TWO.description": "Deal {Damage:diff()} damage. The next 2 [gold]Grenades[/gold] you play are free.",
+  "LIBERATE_THE_SPIRE-ONE_TWO.upgraded_description": "Deal {Damage:diff()} damage. The next 2 [gold]Grenades[/gold] you play are free.",
+  
+  
+  "LIBERATE_THE_SPIRE-SHIELD_GRENADE.title": "Shield Grenade",
+  "LIBERATE_THE_SPIRE-SHIELD_GRENADE.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "LIBERATE_THE_SPIRE-SHIELD_GRENADE.upgraded_description": "Gain [green]{Block:diff}[/green] [gold]Block[/gold].",
+
+  "LIBERATE_THE_SPIRE-INCENDIARY_IMPACT_GRENADE.title": "Incendiary Impact Grenade",
+  "LIBERATE_THE_SPIRE-INCENDIARY_IMPACT_GRENADE.description": "Deal {Damage:diff()} damage. Apply {BurnPower:diff()} [gold]Burn[/gold].",
+  "LIBERATE_THE_SPIRE-INCENDIARY_IMPACT_GRENADE.upgraded_description": "Deal {Damage:diff()} damage. Apply {BurnPower:diff()} [gold]Burn[/gold].",
+  
+  
+  "LIBERATE_THE_SPIRE-LURE_MINE.title": "Lure Mine",
+  "LIBERATE_THE_SPIRE-LURE_MINE.description": "Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold] to all enemies.",
+  "LIBERATE_THE_SPIRE-LURE_MINE.upgraded_description": "Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold] to all enemies.",
+
+  "LIBERATE_THE_SPIRE-TACTICAL_IMPROVISATION.title": "Tactical Improvisation",
+  "LIBERATE_THE_SPIRE-TACTICAL_IMPROVISATION.description": "Gain [green]{Block:diff}[/green] [gold]Block[/gold]. Add [gold]Grenade[/gold] and [gold]Exhaust[/gold] to a card in your hand. It cannot be [gold]Resupplied[/gold]." ,
+  "LIBERATE_THE_SPIRE-TACTICAL_IMPROVISATION.upgraded_description": "Gain [green]{Block:diff}[/green] [gold]Block[/gold]. Add [gold]Grenade[/gold] and [gold]Exhaust[/gold] to a card in your hand. It cannot be [gold]Resupplied[/gold]." ,
+  "LIBERATE_THE_SPIRE-TACTICAL_IMPROVISATION.selectionScreenPrompt": "Choose a card to turn into a [gold]Grenade[/gold].",
+
+  "LIBERATE_THE_SPIRE-TRENCH_ENGINEER.title": "Trench Engineer",
+  "LIBERATE_THE_SPIRE-TRENCH_ENGINEER.description": "For every 2 [gold]Grenades[/gold] played, draw {Cards:diff()} {Cards:plural:card|cards}.",
+  
+  
+
+  "LIBERATE_THE_SPIRE-GRENADE_LAUNCHER.title": "Grenade Launcher",
+  "LIBERATE_THE_SPIRE-GRENADE_LAUNCHER.description": "Deal {Damage:diff()} damage to all enemies. Add {Cards:diff()} random [gold]Grenades[/gold] into your hand. The next 3 [gold]Grenades[/gold] you play are free.",
+  "LIBERATE_THE_SPIRE-GRENADE_LAUNCHER.upgraded_description": "Deal {Damage:diff()} damage to all enemies. Add {Cards:diff()} random [gold]Grenades[/gold] into your hand. The next 3 [gold]Grenades[/gold] you play are free.",
+  
+  "LIBERATE_THE_SPIRE-STUN_GRENADE.title": "Stun Grenade",
+  "LIBERATE_THE_SPIRE-STUN_GRENADE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] to all enemies. Draw {Cards:diff()} cards.",
+  "LIBERATE_THE_SPIRE-STUN_GRENADE.upgraded_description": "Apply {WeakPower:diff()} [gold]Weak[/gold] to all enemies. Draw {Cards:diff()} cards.",
+
+  "LIBERATE_THE_SPIRE-THERMITE.title": "Thermite",
+  "LIBERATE_THE_SPIRE-THERMITE.description": "Deal {Damage:diff()} damage. Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold] and {BurnPower:diff()} [gold]Burn[/gold].",
+  "LIBERATE_THE_SPIRE-THERMITE.upgraded_description": "Deal {Damage:diff()} damage. Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold] and {BurnPower:diff()} [gold]Burn[/gold].",
+
+
+
+  "LIBERATE_THE_SPIRE-DIVE.title": "Dive",
+  "LIBERATE_THE_SPIRE-DIVE.description": "Gain {Block:diff} [gold]Block[/gold].",
+  "LIBERATE_THE_SPIRE-DIVE.upgraded_description": "Gain [green]{Block:diff}[/green] [gold]Block[/gold].",
+
+  "LIBERATE_THE_SPIRE-HOVER_PACK.title": "Hover Pack",
+  "LIBERATE_THE_SPIRE-HOVER_PACK.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "LIBERATE_THE_SPIRE-HOVER_PACK.upgraded_description": "Gain [green]{Block:diff()}[/green] [gold]Block[/gold].",
+  
+  
+  "LIBERATE_THE_SPIRE-WARP_PACK.title": "Warp Pack",
+  "LIBERATE_THE_SPIRE-WARP_PACK.description": "Gain {IntangiblePower:diff()} [gold]Intangible[/gold]. At the end of your turn, lose 5 HP and shuffle a [gold]Wound[/gold] into your draw pile.",
+
+  "LIBERATE_THE_SPIRE-JUMP_PACK.title": "Jump Pack",
+  "LIBERATE_THE_SPIRE-JUMP_PACK.description": "Gain {Block:diff()} [gold]Block[/gold]. Draw {Cards:diff()} cards.",
+  "LIBERATE_THE_SPIRE-JUMP_PACK.upgraded_description": "Gain [green]{Block:diff()}[/green] [gold]Block[/gold]. Draw {Cards:diff()} cards.",
+
+  "LIBERATE_THE_SPIRE-SHIELD_GENERATOR_PACK.title": "Shield Generator",
+  "LIBERATE_THE_SPIRE-SHIELD_GENERATOR_PACK.description": "Gain {Block:diff()} [gold]Block[/gold]. At the end of your turn, gain {BubblePower:diff()} [gold]Block[/gold].",
+  "LIBERATE_THE_SPIRE-SHIELD_GENERATOR_PACK.upgraded_description": "Gain [green]{Block:diff()}[/green] [gold]Block[/gold]. At the end of your turn, gain {BubblePower:diff()} [gold]Block[/gold].",
+
+  "LIBERATE_THE_SPIRE-BALLISTIC_SHIELD.title": "Ballistic Shield",
+  "LIBERATE_THE_SPIRE-BALLISTIC_SHIELD.description": "Gain {BufferPower:diff()} [gold]Buffer[/gold]. Reduce this card's [gold]Buffer[/gold] gain by 1 this combat.",
+  "LIBERATE_THE_SPIRE-BALLISTIC_SHIELD.upgraded_description": "Gain {BufferPower:diff()} [gold]Buffer[/gold]. Reduce this card's [gold]Buffer[/gold] gain by 1 this combat.",
+
+
+  "LIBERATE_THE_SPIRE-HELLDIVERS_NEVER_DIE.title": "Helldivers Never Die!",
+  "LIBERATE_THE_SPIRE-HELLDIVERS_NEVER_DIE.description": "Heal {Heal:diff()}. Shuffle {Cards:diff()} {IfUpgraded:show:[gold]upgraded [/gold]}[gold]{Cards:plural:Stim|Stims}[/gold] into your draw pile.",
+  "LIBERATE_THE_SPIRE-HELLDIVERS_NEVER_DIE.upgradeddescription": "Heal {Heal:diff()}. Shuffle {Cards:diff()} {IfUpgraded:show:[gold]upgraded [/gold]}[gold]{Cards:plural:Stim|Stims}[/gold] into your draw pile.",
+
+
+  "LIBERATE_THE_SPIRE-KILL_EM_ALL_.title": "Kill 'em All!!",
+  "LIBERATE_THE_SPIRE-KILL_EM_ALL_.description": "Whenever you kill an enemy this turn, add 1 [gold]Stim[/gold] into your hand. It is free to play this turn.",
+
+  "LIBERATE_THE_SPIRE-FOR_SUPER_EARTH___.description": "Whenever you deal damage this turn, gain 1 [gold]Strength[/gold] this turn.",
+  "LIBERATE_THE_SPIRE-FOR_SUPER_EARTH___.title": "For Super Earth!!!",
+
+
+  
+  
+  "LIBERATE_THE_SPIRE-REINFORCE.description": "Not Implemented",
+  "LIBERATE_THE_SPIRE-REINFORCE.title": "Reinforce"
+  
+
+
+}
