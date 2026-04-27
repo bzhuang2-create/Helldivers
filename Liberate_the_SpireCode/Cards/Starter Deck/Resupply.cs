@@ -26,7 +26,7 @@ public class Resupply() : Liberate_the_SpireCard(2, CardType.Skill, CardRarity.B
     {
         Resupply supply = this;
         IEnumerable<CardModel> list = (IEnumerable<CardModel>) PileType.Exhaust.GetPile(supply.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) 
-            (c => c.CanonicalKeywords.Contains(Character.Liberate_the_Spire.HelldiverKeywords.Resupply))).ToList<CardModel>();
+            (c => c.Keywords.Contains(Character.Liberate_the_Spire.HelldiverKeywords.Resupply))).ToList<CardModel>();
         foreach (CardModel card in list)
         {
             CardPileAddResult cardPileAddResult = await CardPileCmd.Add(card, PileType.Draw);

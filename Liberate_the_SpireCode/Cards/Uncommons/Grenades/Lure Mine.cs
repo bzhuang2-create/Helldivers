@@ -39,8 +39,8 @@ public class Lure_Mine() : Liberate_the_SpireCard(2, CardType.Skill, CardRarity.
         ArgumentNullException.ThrowIfNull(gren.CombatState, "Combatstate");
         await CreatureCmd.TriggerAnim(gren.Owner.Creature, "Cast", gren.Owner.Character.CastAnimDelay);
         
-        IReadOnlyList<VulnerablePower> vulnerablePowerList = await PowerCmd.Apply<VulnerablePower>((IEnumerable<Creature>) 
-            gren.CombatState.HittableEnemies, gren.DynamicVars.Vulnerable.BaseValue, gren.Owner.Creature, (CardModel) gren);
+        IReadOnlyList<VulnerablePower> vulnerablePowerList = await PowerCmd.Apply<VulnerablePower>(choiceContext,
+            gren.CombatState.HittableEnemies, gren.DynamicVars.Vulnerable.BaseValue, gren.Owner.Creature, gren);
     }
     
     

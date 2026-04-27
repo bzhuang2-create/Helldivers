@@ -23,7 +23,7 @@ public class Dive() : Liberate_the_SpireCard(0, CardType.Skill, CardRarity.Commo
 {   
     public override bool GainsBlock => true;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5,  ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(4,  ValueProp.Move)];
     
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -34,6 +34,6 @@ public class Dive() : Liberate_the_SpireCard(0, CardType.Skill, CardRarity.Commo
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Block.UpgradeValueBy(2);
+        this.DynamicVars.Block.UpgradeValueBy(3);
     }
 }

@@ -35,7 +35,7 @@ public class Grenade_Pistol() : Liberate_the_SpireCard(1, CardType.Attack, CardR
             .TargetingAllOpponents(CombatState).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
         
         //ArgumentNullException.ThrowIfNull(gp.Owner.Creature, "gp.Owner.Creature");
-        FreeGrenadePower? power = await PowerCmd.Apply<FreeGrenadePower>(gp.Owner.Creature, 1M, gp.Owner.Creature, gp);
+        FreeGrenadePower? power = await PowerCmd.Apply<FreeGrenadePower>(choiceContext, gp.Owner.Creature, 1M, gp.Owner.Creature, gp);
     }
 
     protected override void OnUpgrade()

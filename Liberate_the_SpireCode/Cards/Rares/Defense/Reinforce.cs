@@ -22,7 +22,7 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Defense;
 //This is not implmented
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
-public class Reinforce() : Liberate_the_SpireCard(3, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+public class Reinforce() : Liberate_the_SpireCard(3, CardType.Power, CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<IntangiblePower>(1)];
 
@@ -31,10 +31,10 @@ public class Reinforce() : Liberate_the_SpireCard(3, CardType.Power, CardRarity.
     {
         Reinforce warp = this;
         await CreatureCmd.TriggerAnim(warp.Owner.Creature, "Cast", warp.Owner.Character.CastAnimDelay);
-        IntangiblePower? intangiblePower = await PowerCmd.Apply<IntangiblePower>(warp.Owner.Creature, 1, warp.Owner.Creature, (CardModel) warp);
+        IntangiblePower? intangiblePower = await PowerCmd.Apply<IntangiblePower>(choiceContext, warp.Owner.Creature, 1, warp.Owner.Creature, (CardModel) warp);
         //Yes, it's hard coded lmao I couldn't get the other syntax to work
         
-        Warp_Power? power = await PowerCmd.Apply<Warp_Power>(warp.Owner.Creature, 1M, warp.Owner.Creature,  warp);
+        WarpPower? power = await PowerCmd.Apply<WarpPower>(choiceContext, warp.Owner.Creature, 1M, warp.Owner.Creature,  warp);
     }
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>

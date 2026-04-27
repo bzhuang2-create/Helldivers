@@ -20,7 +20,7 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.UnCommons.Grenades;
 
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
-public class Shield_Grenade() : Liberate_the_SpireCard(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+public class Shield_Grenade() : Liberate_the_SpireCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {   
     public override bool GainsBlock => true;
     
@@ -38,6 +38,6 @@ public class Shield_Grenade() : Liberate_the_SpireCard(2, CardType.Skill, CardRa
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Block.UpgradeValueBy(4);
+        this.DynamicVars.Block.UpgradeValueBy(3);
     }
 }

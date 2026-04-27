@@ -21,7 +21,7 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Grenades;
 
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
-public class One_Two() : Liberate_the_SpireCard(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+public class One_Two() : Liberate_the_SpireCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move)];
     
@@ -31,13 +31,13 @@ public class One_Two() : Liberate_the_SpireCard(1, CardType.Attack, CardRarity.C
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         One_Two gp = this;
-        //ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-        ArgumentNullException.ThrowIfNull(CombatState, "cardPlay.Target");
+        ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
+        ArgumentNullException.ThrowIfNull(CombatState, "combatstate");
         AttackCommand attackCommand = await DamageCmd.Attack(gp.DynamicVars.Damage.BaseValue).FromCard((CardModel) gp)
             .Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
         
         //ArgumentNullException.ThrowIfNull(gp.Owner.Creature, "gp.Owner.Creature");
-        FreeGrenadePower? power = await PowerCmd.Apply<FreeGrenadePower>(gp.Owner.Creature, 2M, gp.Owner.Creature, gp);
+        FreeGrenadePower? power = await PowerCmd.Apply<FreeGrenadePower>(choiceContext,gp.Owner.Creature, 2M, gp.Owner.Creature, gp);
     }
 
     protected override void OnUpgrade()

@@ -26,7 +26,7 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Grenades;
 [Pool(typeof(Liberate_the_SpireCardPool))]
 public class Stun_Grenade() : Liberate_the_SpireCard(2, CardType.Skill, CardRarity.Rare, TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<WeakPower>(2), new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<WeakPower>(3), new CardsVar(3)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => new List<CardKeyword> 
         {CardKeyword.Exhaust, Character.Liberate_the_Spire.HelldiverKeywords.Resupply, Character.Liberate_the_Spire.HelldiverKeywords.Grenade};
@@ -38,8 +38,8 @@ public class Stun_Grenade() : Liberate_the_SpireCard(2, CardType.Skill, CardRari
         ArgumentNullException.ThrowIfNull(gren.CombatState, "Combatstate");
         await CreatureCmd.TriggerAnim(gren.Owner.Creature, "Cast", gren.Owner.Character.CastAnimDelay);
         
-        IReadOnlyList<WeakPower> weakPowerList = await PowerCmd.Apply<WeakPower>((IEnumerable<Creature>) 
-            gren.CombatState.HittableEnemies, gren.DynamicVars.Weak.BaseValue, gren.Owner.Creature, (CardModel) gren);
+        IReadOnlyList<WeakPower> weakPowerList = await PowerCmd.Apply<WeakPower>(choiceContext,
+            gren.CombatState.HittableEnemies, gren.DynamicVars.Weak.BaseValue, gren.Owner.Creature, gren);
         
         IEnumerable<CardModel> cardModels = await CardPileCmd.Draw(choiceContext, gren.DynamicVars.Cards.BaseValue, gren.Owner);
     }

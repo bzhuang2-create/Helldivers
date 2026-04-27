@@ -20,15 +20,14 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Grenades;
+namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Grenades;
 
-
-
+    
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
 public class Incendiary_Impact_Grenade() : Liberate_the_SpireCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2, ValueProp.Move), new PowerVar<BurnPower>(4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2, ValueProp.Move), new PowerVar<BurnPower>(3)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => new List<CardKeyword> 
         {CardKeyword.Exhaust, Character.Liberate_the_Spire.HelldiverKeywords.Resupply, Character.Liberate_the_Spire.HelldiverKeywords.Grenade};
@@ -46,7 +45,7 @@ public class Incendiary_Impact_Grenade() : Liberate_the_SpireCard(1, CardType.At
         AttackCommand attackCommand = await DamageCmd.Attack(gren.DynamicVars.Damage.BaseValue).FromCard((CardModel) gren)
             .Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
         
-        IReadOnlyList<BurnPower> burn = await PowerCmd.Apply<BurnPower>(gren.CombatState.HittableEnemies,
+        BurnPower? burn = await PowerCmd.Apply<BurnPower>(choiceContext, play.Target,
             gren.DynamicVars.Power<BurnPower>().BaseValue, play.Target, gren);
     }
     

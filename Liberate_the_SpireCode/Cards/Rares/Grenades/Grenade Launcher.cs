@@ -48,10 +48,10 @@ public class Grenade_Launcher() : Liberate_the_SpireCard(3, CardType.Attack, Car
             
             if (card == null)
                 return;
-            CardPileAddResult combat = await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, true);
+            CardPileAddResult combat = await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, card.Owner);
         }
         
-        FreeGrenadePower? power = await PowerCmd.Apply<FreeGrenadePower>(GL.Owner.Creature, 3M, GL.Owner.Creature, GL);
+        FreeGrenadePower? power = await PowerCmd.Apply<FreeGrenadePower>(choiceContext, GL.Owner.Creature, 3M, GL.Owner.Creature, GL);
     }
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>

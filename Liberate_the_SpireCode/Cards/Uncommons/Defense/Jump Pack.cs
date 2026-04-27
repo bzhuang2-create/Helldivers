@@ -16,9 +16,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Defense;
-
-
+namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Defense;
 
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
@@ -26,7 +24,7 @@ public class Jump_Pack() : Liberate_the_SpireCard(1, CardType.Skill, CardRarity.
 {   
     public override bool GainsBlock => true;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8,  ValueProp.Move), new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6,  ValueProp.Move), new CardsVar(2)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => new List<CardKeyword> 
         {Character.Liberate_the_Spire.HelldiverKeywords.Recharge};

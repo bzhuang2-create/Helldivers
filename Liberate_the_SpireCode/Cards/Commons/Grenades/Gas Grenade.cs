@@ -35,14 +35,16 @@ public class Gas_Grenade() : Liberate_the_SpireCard(1, CardType.Attack, CardRari
     {
         Gas_Grenade gren = this;
         //ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-        ArgumentNullException.ThrowIfNull(CombatState, "cardPlay.Target");
+        ArgumentNullException.ThrowIfNull(CombatState, "combatState");
+        ArgumentNullException.ThrowIfNull(gren.CombatState, "Grenade combatState");
         await CreatureCmd.TriggerAnim(gren.Owner.Creature, "Cast", gren.Owner.Character.CastAnimDelay);
         
         gren.SpawnVfx();
         await Cmd.CustomScaledWait(0.2f, 0.4f);
-        foreach (Creature hittableEnemy in (IEnumerable<Creature>) gren.CombatState.HittableEnemies)
+        
+        foreach (Creature hittableEnemy in gren.CombatState.HittableEnemies)
         {
-            PoisonPower? poisonPower = await PowerCmd.Apply<PoisonPower>(hittableEnemy, gren.DynamicVars.Poison.BaseValue, gren.Owner.Creature, (CardModel) gren);
+            PoisonPower? poisonPower = await PowerCmd.Apply<PoisonPower>(choiceContext, hittableEnemy, gren.DynamicVars.Poison.BaseValue, gren.Owner.Creature, (CardModel) gren);
         }
         
     }
@@ -54,6 +56,9 @@ public class Gas_Grenade() : Liberate_the_SpireCard(1, CardType.Attack, CardRari
             return;
         NSmokyVignetteVfx? child = NSmokyVignetteVfx.Create(new Color(0.8f, 0.8f, 0.3f, 0.66f), new Color(0.0f, 4f, 0.0f, 0.33f));
         combatVfxContainer.AddChildSafely((Node?) child);
+        
+        ArgumentNullException.ThrowIfNull(this.CombatState, "CombatState");
+        
         foreach (Creature hittableEnemy in (IEnumerable<Creature>) this.CombatState.HittableEnemies)
             combatVfxContainer.AddChildSafely((Node?) NSmokePuffVfx.Create(hittableEnemy, NSmokePuffVfx.SmokePuffColor.Green));
     }

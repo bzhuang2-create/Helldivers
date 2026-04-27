@@ -24,10 +24,10 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Artillery.Shells
 
 
 
-[Pool(typeof(Liberate_the_SpireCardPool))]
+
 public class High_Yield_Explosive() : Liberate_the_SpireCard(1, CardType.Attack, CardRarity.Token, TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(25, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(20, ValueProp.Move)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => new List<CardKeyword> 
         {CardKeyword.Exhaust, Character.Liberate_the_Spire.HelldiverKeywords.Artillery};
@@ -45,6 +45,6 @@ public class High_Yield_Explosive() : Liberate_the_SpireCard(1, CardType.Attack,
     
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Poison.UpgradeValueBy(5M);
+        this.DynamicVars.Damage.UpgradeValueBy(5M);
     }
 }
