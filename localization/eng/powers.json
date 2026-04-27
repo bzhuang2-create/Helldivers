@@ -10,7 +10,34 @@
   "LIBERATE_THE_SPIRE-WARP_POWER.title": "Overcharge",
 
 
-  "LIBERATE_THE_SPIRE-BURN_POWER.description": "",
-  "LIBERATE_THE_SPIRE-BURN_POWER.smartDescription": "",
-  "LIBERATE_THE_SPIRE-BURN_POWER.title": "Burning"
+  "LIBERATE_THE_SPIRE-BURN_POWER.description": "Burning creatures lose HP at the start of their turn and deal 2.5% less damage per stack of Burn. Each turn, Burn is reduced by [blue]1[/blue]",
+  "LIBERATE_THE_SPIRE-BURN_POWER.smartDescription": "Burning creatures lose HP at the start of their turn and deal 2.5% less damage per stack of Burn. Each turn, Burn is reduced by [blue]1[/blue]",
+  "LIBERATE_THE_SPIRE-BURN_POWER.title": "Burning",
+
+
+  "LIBERATE_THE_SPIRE-BUBBLE_POWER.description": "At the start of your turn, gain {Amount} [gold]Block[/gold].",
+  "LIBERATE_THE_SPIRE-BUBBLE_POWER.smartDescription": "At the start of your turn, gain {Amount} [gold]Block[/gold].",
+  "LIBERATE_THE_SPIRE-BUBBLE_POWER.title": "Shield Generator",
+
+
+  "LIBERATE_THE_SPIRE-ENGINEER_POWER.description": "For every 2 [gold]Grenades[/gold] played, draw {Amount} {Amount:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-ENGINEER_POWER.smartDescription": "For every 2 [gold]Grenades[/gold] played, draw {Amount} {Amount:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-ENGINEER_POWER.title": "Trench Engineer",
+
+  "LIBERATE_THE_SPIRE-KILL_ALL_POWER.description": "Whenever you kill an enemy this turn, add {Amount} [gold]{Amount:plural:Stim|Stims}[/gold] into your hand. {Amount:plural:It is|They are} free to play this turn.",
+  "LIBERATE_THE_SPIRE-KILL_ALL_POWER.smartDescription": "Whenever you kill an enemy this turn, add {Amount} [gold]{Amount:plural:Stim|Stims}[/gold] into your hand. {Amount:plural:It is|They are} free to play this turn.",
+  "LIBERATE_THE_SPIRE-KILL_ALL_POWER.title": "Kill 'em All!!",
+
+  "LIBERATE_THE_SPIRE-MINILOGUE_POWER.description": "Whenever you deal damage this turn, gain {Amount:diff()} [gold]Strength[/gold] this turn.",
+  "LIBERATE_THE_SPIRE-MINILOGUE_POWER.smartDescription": "Whenever you deal damage this turn, gain {Amount:diff()} [gold]Strength[/gold] this turn.",
+  "LIBERATE_THE_SPIRE-MINILOGUE_POWER.title": "For Super Earth!!!",
+
+
+  "LIBERATE_THE_SPIRE-ACID_POWER.description": "For the next turn, whenever this target receives [gold]Poison[/gold], it receives 1 more [gold]Poison[/gold].",
+  "LIBERATE_THE_SPIRE-ACID_POWER.smartDescription": "For the next {Amount:plural:turn|{Amount} turns}, whenever this target receives [gold]Poison[/gold], it receives 1 more [gold]Poison[/gold].",
+  "LIBERATE_THE_SPIRE-ACID_POWER.title": "Acid",
+
+  "LIBERATE_THE_SPIRE-COMBUST_POWER.description": "For the next turn, whenever this target receives [gold]Burn[/gold], it receives 1 more [gold]Burn[/gold].",
+  "LIBERATE_THE_SPIRE-COMBUST_POWER.smartDescription": "For the next {Amount:plural:turn|{Amount} turns}, whenever this target receives [gold]Burn[/gold], it receives 1 more [gold]Burn[/gold].",
+  "LIBERATE_THE_SPIRE-COMBUST_POWER.title": "Combustion"
 }
