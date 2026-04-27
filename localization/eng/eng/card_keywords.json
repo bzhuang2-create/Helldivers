@@ -1,0 +1,17 @@
+{
+  "LIBERATE_THE_SPIRE-RESUPPLY.description": "Moved from the exhaust pile into your draw pile when Resupply is played.",
+  "LIBERATE_THE_SPIRE-RESUPPLY.title": "Resupply",
+  
+  "LIBERATE_THE_SPIRE-REARM.description": "Moved from the exhaust pile into your draw pile when Eagle Re-Arm is played.",
+  "LIBERATE_THE_SPIRE-REARM.title": "ReArm",
+
+  "LIBERATE_THE_SPIRE-GRENADE.description": "Boom Boom",
+  "LIBERATE_THE_SPIRE-GRENADE.title": "Grenade",
+
+  "LIBERATE_THE_SPIRE-RECHARGE.description": "This card will need to recharge after being played",
+  "LIBERATE_THE_SPIRE-RECHARGE.title": "Recharge",
+
+  "LIBERATE_THE_SPIRE-ARTILLERY.title": "Artillery",
+  "LIBERATE_THE_SPIRE-ARTILLERY.description": "BOOM!"
+  
+}
