@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BaseLib.Abstracts;
+using BaseLib.Hooks;
 using Liberate_the_Spire.Liberate_the_SpireCode;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -44,30 +45,28 @@ public sealed class BurnPower : CustomPowerModel
     System.IO.Path.Join(MainFile.ResPath, "images", "powers", "burn_power.png");
 
   private decimal attack_penalty_per_stack = (decimal)(2.5 / 100);
+  
+  protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2.5M, ValueProp.Move)];
   private int TriggerCount
   {
     get
     {
+      ArgumentNullException.ThrowIfNull(this.Owner.CombatState, "Owner.CombatState");
       return Math.Min(this.Amount, 1 + this.Owner.CombatState.GetOpponentsOf(this.Owner).Where<Creature>((Func<Creature, bool>) 
         (c => c.IsAlive)).Sum<Creature>((Func<Creature, int>) (a => a.GetPowerAmount<AccelerantPower>())));
     }
   }
   
-  public override Decimal ModifyDamageMultiplicative(
-    Creature? target,
-    Decimal amount,
-    ValueProp props,
-    Creature? dealer,
-    CardModel? cardSource)
+  public override Decimal ModifyDamageMultiplicative(Creature? target, Decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
   {
     if (dealer != this.Owner || !props.IsPoweredAttack())
       return 1M;
     Decimal percent_decrease = attack_penalty_per_stack;
-    Decimal percent_left = 1 - percent_decrease * amount;
+    Decimal percent_left = 1 - percent_decrease * this.Amount;
     return percent_left;
   }
   
-  public override async Task AfterSideTurnStart(CombatSide side, CombatState combatState)
+  public override async Task AfterSideTurnStart(CombatSide side, ICombatState combatState)
   {
     BurnPower power = this;
     if (side != power.Owner.Side)
@@ -83,4 +82,16 @@ public sealed class BurnPower : CustomPowerModel
         await Cmd.CustomScaledWait(0.1f, 0.25f);
     }
   }
+
+  public override IEnumerable<HealthBarForecastSegment> GetHealthBarForecastSegments(HealthBarForecastContext ctx)
+  {
+    if (Amount <= 0) yield break;
+    yield return new HealthBarForecastSegment(
+      Amount,
+      new Color("ffffff"),
+      HealthBarForecastDirection.FromRight,
+      1
+    );
+  }
+  
 }

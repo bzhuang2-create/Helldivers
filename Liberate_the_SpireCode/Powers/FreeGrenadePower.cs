@@ -33,7 +33,7 @@ public sealed class FreeGrenadePower : CustomPowerModel
     public override bool TryModifyEnergyCostInCombat(CardModel card, Decimal originalCost, out Decimal modifiedCost)
     {
         modifiedCost = originalCost;
-        if (card.Owner.Creature != this.Owner || !card.CanonicalKeywords.Contains(Liberate_the_SpireCode.Character.Liberate_the_Spire.HelldiverKeywords.Grenade))
+        if (card.Owner.Creature != this.Owner || !card.Keywords.Contains(Liberate_the_SpireCode.Character.Liberate_the_Spire.HelldiverKeywords.Grenade))
             return false;
         PileType? type = card.Pile?.Type;
         bool flag;
@@ -58,7 +58,7 @@ public sealed class FreeGrenadePower : CustomPowerModel
     public override async Task BeforeCardPlayed(CardPlay cardPlay)
     {
         FreeGrenadePower power = this;
-        if (cardPlay.Card.Owner.Creature != power.Owner || !cardPlay.Card.CanonicalKeywords.Contains(Liberate_the_SpireCode.Character.Liberate_the_Spire.HelldiverKeywords.Grenade))
+        if (cardPlay.Card.Owner.Creature != power.Owner || !cardPlay.Card.Keywords.Contains(Liberate_the_SpireCode.Character.Liberate_the_Spire.HelldiverKeywords.Grenade))
             return;
         PileType? type = cardPlay.Card.Pile?.Type;
         bool flag;

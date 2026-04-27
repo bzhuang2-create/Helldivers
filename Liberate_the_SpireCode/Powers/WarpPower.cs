@@ -29,7 +29,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 #nullable enable
 namespace Liberate_the_Spire.liberate_the_SpireCode.Powers;
 
-public sealed class Warp_Power : CustomPowerModel
+public sealed class WarpPower : CustomPowerModel
 {
   public override PowerType Type => PowerType.Debuff;
 
@@ -48,7 +48,7 @@ public sealed class Warp_Power : CustomPowerModel
   
   public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
   {
-    Warp_Power warp = this;
+    WarpPower warp = this;
 
     if (side != CombatSide.Player)
     {
@@ -66,7 +66,8 @@ public sealed class Warp_Power : CustomPowerModel
         (CardModel?)null);
     
     ArgumentNullException.ThrowIfNull(warp.Owner.Player, "No player?");
-    CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(warp.CombatState.CreateCard<Wound>(warp.Owner.Player), PileType.Draw, true));
+    CardCmd.PreviewCardPileAdd(await 
+      CardPileCmd.AddGeneratedCardToCombat(warp.CombatState.CreateCard<Wound>(warp.Owner.Player), PileType.Draw, warp.Owner.Player, CardPilePosition.Random));
     
     //IncrementSelfDamage();
   }
