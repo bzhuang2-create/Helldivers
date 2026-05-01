@@ -34,9 +34,6 @@ public class Re_Educator() : Liberate_the_SpireCard(0, CardType.Skill, CardRarit
         ArgumentNullException.ThrowIfNull(card.CombatState, "Grenade combatState");
         await CreatureCmd.TriggerAnim(card.Owner.Creature, "Cast", card.Owner.Character.CastAnimDelay);
         
-        //await Cmd.CustomScaledWait(0.2f, 0.4f);
-        
-        
         PoisonPower? poisonPower = await PowerCmd.Apply<PoisonPower>
             (choiceContext, play.Target, card.DynamicVars.Poison.BaseValue, card.Owner.Creature, (CardModel) card);
         

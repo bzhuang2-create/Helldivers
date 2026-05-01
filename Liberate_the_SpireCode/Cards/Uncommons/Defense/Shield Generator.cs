@@ -35,8 +35,8 @@ public class Shield_Generator_Pack() : Liberate_the_SpireCard(2, CardType.Power,
         Shield_Generator_Pack pack = this;
         Decimal num = await CreatureCmd.GainBlock(pack.Owner.Creature, pack.DynamicVars.Block, play);
         
-        BubblePower? power = await PowerCmd.Apply<BubblePower>(choiceContext,pack.Owner.Creature, pack.DynamicVars.Power<BubblePower>().BaseValue, pack.Owner.Creature,  pack);
-        
+        BubblePower? power = await PowerCmd.Apply<BubblePower>
+            (choiceContext,pack.Owner.Creature, pack.DynamicVars.Power<BubblePower>().BaseValue, pack.Owner.Creature,  pack);
     }
     
     protected override void OnUpgrade()
@@ -44,5 +44,4 @@ public class Shield_Generator_Pack() : Liberate_the_SpireCard(2, CardType.Power,
         this.DynamicVars.Block.UpgradeValueBy(2);
         this.DynamicVars.Power<BubblePower>().UpgradeValueBy(1);
     }
-    
 }
