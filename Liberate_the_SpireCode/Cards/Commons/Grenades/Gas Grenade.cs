@@ -24,7 +24,7 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Grenades;
 
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
-public class Gas_Grenade() : Liberate_the_SpireCard(1, CardType.Attack, CardRarity.Common, TargetType.AllEnemies)
+public class Gas_Grenade() : Liberate_the_SpireCard(1, CardType.Skill, CardRarity.Common, TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PoisonPower>(3)];
     
@@ -63,7 +63,7 @@ public class Gas_Grenade() : Liberate_the_SpireCard(1, CardType.Attack, CardRari
             combatVfxContainer.AddChildSafely((Node?) NSmokePuffVfx.Create(hittableEnemy, NSmokePuffVfx.SmokePuffColor.Green));
     }
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => new List<IHoverTip> {(HoverTipFactory.FromPower<PoisonPower>())};
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [(HoverTipFactory.FromPower<PoisonPower>())];
     
     protected override void OnUpgrade()
     {
