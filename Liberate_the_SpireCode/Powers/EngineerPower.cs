@@ -62,7 +62,7 @@ public sealed class EngineerPower : CustomPowerModel
     {
       data = Epower.GetInternalData<EngineerPower.Data>();
       ++data.timesPlayed;
-      if (data.timesPlayed >= 2)
+      if (data.timesPlayed >= grenadeThreshold)
       {
         Epower.InvokeDisplayAmountChanged();
         //Epower.Flash();
@@ -71,7 +71,7 @@ public sealed class EngineerPower : CustomPowerModel
         
         IEnumerable<CardModel> cardModels = await CardPileCmd.Draw(choiceContext, Epower.Amount, Epower.Owner.Player);
         
-        data.timesPlayed -= 2;
+        data.timesPlayed -= grenadeThreshold;
       }
       Epower.InvokeDisplayAmountChanged();
       data = null;
