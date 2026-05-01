@@ -4,11 +4,28 @@ using BaseLib.Utils.NodeFactories;
 using Liberate_the_Spire.Liberate_the_SpireCode.Extensions;
 using Godot;
 using Liberate_the_Spire.Liberate_the_SpireCode.Cards;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Artillery;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Bullet_Hose;
 using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Defense;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.FireGas;
 using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Grenades;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Stims;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Artillery;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Artillery.Shells;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Bullet_Hose;
 using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Defense;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.FireGas;
 using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Grenades;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Stims;
 using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Starter_Deck;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Artillery;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Bullet_Hose;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Defense;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.FireGas;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Grenades;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.UnCommons.Grenades;
+using Liberate_the_Spire.Liberate_the_SpireCode.Cards.Uncommons.Stims;
 using Liberate_the_Spire.liberate_the_SpireCode.Powers;
 using Liberate_the_Spire.Liberate_the_SpireCode.Relics;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -16,6 +33,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using Gas_Grenade = Liberate_the_Spire.Liberate_the_SpireCode.Cards.Commons.Grenades.Gas_Grenade;
 
 namespace Liberate_the_Spire.Liberate_the_SpireCode.Character;
 
@@ -31,6 +49,7 @@ public class Liberate_the_Spire : PlaceholderCharacterModel
     public override int StartingHp => 100;
     public override int StartingGold => 200;
 
+    
     /*
     public override IEnumerable<CardModel> StartingDeck =>
     [
@@ -51,32 +70,37 @@ public class Liberate_the_Spire : PlaceholderCharacterModel
     ];
     */
     
+    
+    
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<Liberator>(),
-        ModelDb.Card<Liberator>(),
-        ModelDb.Card<Incendiary_Impact_Grenade>(),
-        ModelDb.Card<Incendiary_Impact_Grenade>(),
-        ModelDb.Card<Jump_Pack>(),
-        ModelDb.Card<Jump_Pack>(),
+        ModelDb.Card<Orbital_Precision_Strike>(),
+        ModelDb.Card<Orbital_Precision_Strike>(),
+        ModelDb.Card<Ammunition_Redesign>(),
         
-        ModelDb.Card<Grenade_Launcher>(),
-        ModelDb.Card<Grenade_Launcher>(),
+        ModelDb.Card<Orbital_120>(),
+        ModelDb.Card<Orbital_120>(),
         
-        ModelDb.Card<Dive>(),
-        ModelDb.Card<Dive>(),
-        ModelDb.Card<Resupply>(),
+        ModelDb.Card<Atmospheric_Monitoring>(),
+        ModelDb.Card<Atmospheric_Monitoring>(),
+        ModelDb.Card<Atmospheric_Monitoring>(),
+        ModelDb.Card<Stratagem_Hero>(),
+        ModelDb.Card<Stratagem_Hero>(),
+        
+        ModelDb.Card<Stim_Pistol>(),
+        ModelDb.Card<Stim_Pistol>(),
         ModelDb.Card<Stim>(),
         ModelDb.Card<Stim>(),
-
+        
+        ModelDb.Card<Experimental_Infusion>(),
+        ModelDb.Card<Experimental_Infusion>()
     ];
+    
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
         ModelDb.Relic<Helldivers_Mobilize>()
     ];
-    
-
 
 
 public static class HelldiverKeywords
@@ -95,8 +119,15 @@ public static class HelldiverKeywords
         
         [CustomEnum, KeywordProperties(AutoKeywordPosition.After)]
         public static CardKeyword Artillery;
+
+        [CustomEnum, KeywordProperties(AutoKeywordPosition.After)]
+        public static CardKeyword Continuous;
     }
 
+    public static class HelldiverTags
+    {
+        [CustomEnum] public static CardTag Stim;
+    }
     
     public override CardPoolModel CardPool => ModelDb.CardPool<Liberate_the_SpireCardPool>();
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<Liberate_the_SpireRelicPool>();
