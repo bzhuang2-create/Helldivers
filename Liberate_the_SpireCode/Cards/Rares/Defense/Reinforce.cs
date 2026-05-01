@@ -19,7 +19,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Rares.Defense;
 
 
-//This is not implmented
+//This is not implemented
 
 [Pool(typeof(Liberate_the_SpireCardPool))]
 public class Reinforce() : Liberate_the_SpireCard(3, CardType.Power, CardRarity.Rare, TargetType.Self)

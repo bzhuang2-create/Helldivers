@@ -29,4 +29,9 @@ public class For_Super_Earth___() : Liberate_the_SpireCard(1, CardType.Skill, Ca
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         (IEnumerable<IHoverTip>) new List<IHoverTip> {(HoverTipFactory.FromPower<StrengthPower>())};
+
+    protected override void OnUpgrade()
+    {
+        this.EnergyCost.UpgradeBy(-1);
+    }
 }

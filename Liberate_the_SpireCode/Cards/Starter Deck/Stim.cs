@@ -21,6 +21,9 @@ namespace Liberate_the_Spire.Liberate_the_SpireCode.Cards.Starter_Deck;
 [Pool(typeof(Liberate_the_SpireCardPool))]
 public class Stim() : Liberate_the_SpireCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {   
+    protected override HashSet<CardTag> CanonicalTags => 
+        new HashSet<CardTag>() {Character.Liberate_the_Spire.HelldiverTags.Stim};
+    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(5), new PowerVar<RegenPower>(2)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => new List<CardKeyword> {CardKeyword.Exhaust, Character.Liberate_the_Spire.HelldiverKeywords.Resupply};
