@@ -2,14 +2,11 @@
   "LIBERATE_THE_SPIRE-FREE_GRENADE_POWER.description": "The next {Amount} grenades you play are free",
   "LIBERATE_THE_SPIRE-FREE_GRENADE_POWER.smartDescription": "The next {Amount} grenades you play are free",
   "LIBERATE_THE_SPIRE-FREE_GRENADE_POWER.title": "Grenades!",
-
-
-
+  
   "LIBERATE_THE_SPIRE-WARP_POWER.description": "At the end of your turn, take 5 damage and shuffle a [gold]Wound[/gold] into your draw pile.",
   "LIBERATE_THE_SPIRE-WARP_POWER.smartDescription": "At the end of your turn, take 5 damage and shuffle a [gold]Wound[/gold] into your draw pile.",
   "LIBERATE_THE_SPIRE-WARP_POWER.title": "Overcharge",
-
-
+  
   "LIBERATE_THE_SPIRE-BURN_POWER.description": "Burning creatures lose HP at the start of their turn and deal 2.5% less damage per stack of Burn. Each turn, Burn is reduced by [blue]1[/blue]",
   "LIBERATE_THE_SPIRE-BURN_POWER.smartDescription": "Burning creatures lose HP at the start of their turn and deal 2.5% less damage per stack of Burn. Each turn, Burn is reduced by [blue]1[/blue]",
   "LIBERATE_THE_SPIRE-BURN_POWER.title": "Burning",
@@ -39,5 +36,17 @@
 
   "LIBERATE_THE_SPIRE-COMBUST_POWER.description": "For the next turn, whenever this target receives [gold]Burn[/gold], it receives 1 more [gold]Burn[/gold].",
   "LIBERATE_THE_SPIRE-COMBUST_POWER.smartDescription": "For the next {Amount:plural:turn|{Amount} turns}, whenever this target receives [gold]Burn[/gold], it receives 1 more [gold]Burn[/gold].",
-  "LIBERATE_THE_SPIRE-COMBUST_POWER.title": "Combustion"
+  "LIBERATE_THE_SPIRE-COMBUST_POWER.title": "Combustion",
+
+  "LIBERATE_THE_SPIRE-WALKING_POWER.description": "Whenever you play an [gold]Artillery[/gold] card, draw {Amount} {Amount:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-WALKING_POWER.smartDescription": "Whenever you play an [gold]Artillery[/gold] card, draw {Amount} {Amount:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-WALKING_POWER.title": "Walking Barrage",
+
+  "LIBERATE_THE_SPIRE-ATMOSPHERIC_POWER.description": "[gold]Artillery[/gold] cards deal {Amount}% more damage to enemies.",
+  "LIBERATE_THE_SPIRE-ATMOSPHERIC_POWER.smartDescription": "[gold]Artillery[/gold] cards deal {Amount}% more damage to enemies.",
+  "LIBERATE_THE_SPIRE-ATMOSPHERIC_POWER.title": "Atmospheric Monitoring",
+
+  "LIBERATE_THE_SPIRE-INFUSION_POWER.description": "Whenever you play a stim, gain {Amount} [gold]Block[/gold] and {Amount} [gold]Plating[/gold].",
+  "LIBERATE_THE_SPIRE-INFUSION_POWER.smartDescription": "Whenever you play a stim, gain {Amount} [gold]Block[/gold] and {Amount} [gold]Plating[/gold].",
+  "LIBERATE_THE_SPIRE-INFUSION_POWER.title": "Experimental Infusion"
 }

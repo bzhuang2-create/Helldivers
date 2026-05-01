@@ -12,6 +12,8 @@
   "LIBERATE_THE_SPIRE-RECHARGE.title": "Recharge",
 
   "LIBERATE_THE_SPIRE-ARTILLERY.title": "Artillery",
-  "LIBERATE_THE_SPIRE-ARTILLERY.description": "BOOM!"
+  "LIBERATE_THE_SPIRE-ARTILLERY.description": "BOOM!",
   
+  "LIBERATE_THE_SPIRE-CONTINUOUS.title": "Continuous",
+  "LIBERATE_THE_SPIRE-CONTINUOUS.description": "Will play itself when drawn - careful!"
 }

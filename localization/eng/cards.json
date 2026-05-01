@@ -25,8 +25,8 @@
   
   
   "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.title": "Liberator Carbine",
-  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Draw {Cards:diff()} cards.",
-  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Draw {Cards:diff()} cards.",
+  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-LIBERATOR_CARBINE.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Draw {Cards:diff()} {Cards:plural:card|cards}.",
   
   "LIBERATE_THE_SPIRE-REDEEMER.title": "Redeemer",
   "LIBERATE_THE_SPIRE-REDEEMER.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
@@ -47,13 +47,38 @@
 
   "LIBERATE_THE_SPIRE-AMMUNITION_REDESIGN.title": "Ammunition Redesign",
   "LIBERATE_THE_SPIRE-AMMUNITION_REDESIGN.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold]. Increase the cost of this card by 1 this combat.",
-
+  
   
   "LIBERATE_THE_SPIRE-MAXIGUN.title": "Maxigun",
   "LIBERATE_THE_SPIRE-MAXIGUN.description": "Deal {Damage:diff()} damage 2X times.",
   "LIBERATE_THE_SPIRE-MAXIGUN.upgraded_description": "Deal {Damage:diff()} damage 2X times.",
 
+  
+  
+  "LIBERATE_THE_SPIRE-ORBITAL_PRECISION_STRIKE.title": "Orbital Precision Strike",
+  "LIBERATE_THE_SPIRE-ORBITAL_PRECISION_STRIKE.description": "Deal {CalculatedDamage:diff()} damage. If the target does not intend to attack, deal {ExtraDamage:diff()} extra damage.",
+  "LIBERATE_THE_SPIRE-ORBITAL_PRECISION_STRIKE.upgraded_description": "Deal {CalculatedDamage:diff()} damage. If the target does not intend to attack, deal {ExtraDamage:diff()} extra damage.",
 
+
+
+  "LIBERATE_THE_SPIRE-ORBITAL_120.title": "Orbital 120mm Barrage",
+  "LIBERATE_THE_SPIRE-ORBITAL_120.description": "Deal {Damage:diff()} to a random enemy. Add [gold]Continuous[/gold] to this card.",
+  "LIBERATE_THE_SPIRE-ORBITAL_120.upgraded_description": "Deal {Damage:diff()} to a random enemy. Add [gold]Continuous[/gold] to this card.",
+
+  "LIBERATE_THE_SPIRE-ATMOSPHERIC_MONITORING.title": "Atmospheric Monitoring",
+  "LIBERATE_THE_SPIRE-ATMOSPHERIC_MONITORING.description": "[gold]Artillery[/gold] cards deal {AtmosphericPower:diff()}% more damage to enemies.",
+  "LIBERATE_THE_SPIRE-ATMOSPHERIC_MONITORING.upgraded_description": "[gold]Artillery[/gold] cards deal {AtmosphericPower:diff()}% more damage to enemies.",
+
+  
+  
+  
+  "LIBERATE_THE_SPIRE-ORBITAL_WALKING_BARRAGE.title": "Orbital Walking Barrage",
+  "LIBERATE_THE_SPIRE-ORBITAL_WALKING_BARRAGE.description": "Whenever you play an [gold]Artillery[/gold] card, draw a card.",
+
+  "LIBERATE_THE_SPIRE-STRATAGEM_HERO.description": "Gain {Energy:energyIcons()} and {VulnerablePower:diff()} [gold]Vulnerable[/gold]. Next turn, gain {Energy:energyIcons()}.",
+  "LIBERATE_THE_SPIRE-STRATAGEM_HERO.upgraded_description": "Gain {Energy:energyIcons()} and {VulnerablePower:diff()} [gold]Vulnerable[/gold]. Next turn, gain {Energy:energyIcons()}.",
+  "LIBERATE_THE_SPIRE-STRATAGEM_HERO.title": "Stratagem Hero",
+  
   "LIBERATE_THE_SPIRE-SEAF_ARTILLERY.title": "SEAF Artillery",
   "LIBERATE_THE_SPIRE-SEAF_ARTILLERY.description": "Shuffle 5 {IfUpgraded:show:[gold]upgraded [/gold]}SEAF Artillery Shells into your draw pile.",
   "LIBERATE_THE_SPIRE-SEAF_ARTILLERY.upgraded_description": "Shuffle 5 {IfUpgraded:show:[gold]upgraded [/gold]}SEAF Artillery Shells into your draw pile.",
@@ -168,9 +193,6 @@
 
   
   
-  "LIBERATE_THE_SPIRE-COYOTE.title": "Coyote",
-  "LIBERATE_THE_SPIRE-COYOTE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Apply {BurnPower:diff()} [gold]Burn[/gold] {Repeat:diff()} times.",
-  "LIBERATE_THE_SPIRE-COYOTE.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Apply {BurnPower:diff()} [gold]Burn[/gold] {Repeat:diff()} times.",
 
   
   
@@ -181,25 +203,53 @@
   "LIBERATE_THE_SPIRE-CRISPER.title": "Crisper",
   "LIBERATE_THE_SPIRE-CRISPER.description": "Apply {BurnPower:diff()} [gold]Burn[/gold] and {CombustPower:diff()} Combust.",
   "LIBERATE_THE_SPIRE-CRISPER.upgraded_description": "Apply {BurnPower:diff()} [gold]Burn[/gold] and {CombustPower:diff()} Combust.",
-  
-  
-  
-  
-  
+
+  "LIBERATE_THE_SPIRE-COYOTE.title": "Coyote",
+  "LIBERATE_THE_SPIRE-COYOTE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Apply {BurnPower:diff()} [gold]Burn[/gold] {Repeat:diff()} times.",
+  "LIBERATE_THE_SPIRE-COYOTE.upgraded_description": "Deal {Damage:diff()} damage {Repeat:diff()} times. Apply {BurnPower:diff()} [gold]Burn[/gold] {Repeat:diff()} times.",
+
+  "LIBERATE_THE_SPIRE-SPEARGUN.title": "Speargun",
+  "LIBERATE_THE_SPIRE-SPEARGUN.description": "Deal {Damage:diff()} damage. Apply {PoisonPower:diff()} [gold]Poison[/gold].",
+  "LIBERATE_THE_SPIRE-SPEARGUN.upgraded_description": "Deal {Damage:diff()} damage. Apply {PoisonPower:diff()} [gold]Poison[/gold].",
+
+  "LIBERATE_THE_SPIRE-PYROMANIAC.description": "Gain 1 [gold]Strength[/gold] for every {Repeat:diff()} [gold]Burn[/gold] on all enemies.",
+  "LIBERATE_THE_SPIRE-PYROMANIAC.upgraded_description": "Gain 1 [gold]Strength[/gold] for every {Repeat:diff()} [gold]Burn[/gold] on all enemies.",
+  "LIBERATE_THE_SPIRE-PYROMANIAC.title": "Pyromaniac",
+
+  "LIBERATE_THE_SPIRE-EXPERT_EXTERMINATOR.description": "Enemy loses 1 [gold]Strength[/gold] for every {Repeat:diff()} [gold]Poison[/gold] it has.",
+  "LIBERATE_THE_SPIRE-EXPERT_EXTERMINATOR.upgraded_description": "Enemy loses 1 [gold]Strength[/gold] for every {Repeat:diff()} [gold]Poison[/gold] it has.",
+  "LIBERATE_THE_SPIRE-EXPERT_EXTERMINATOR.title": "Expert Exterminator",
+
+
+  "LIBERATE_THE_SPIRE-STERILIZER.title": "Sterilizer",
+  "LIBERATE_THE_SPIRE-STERILIZER.description": " Apply {PoisonPower:diff()} [gold]Poison[/gold] to all enemies. Randomize enemy [gold]intents[/gold].",
+  "LIBERATE_THE_SPIRE-STERILIZER.upgraded_description": " Apply {PoisonPower:diff()} [gold]Poison[/gold] to all enemies. Randomize enemy [gold]intents[/gold].",
+
+  "LIBERATE_THE_SPIRE-FLAMETHROWER.title": "Flamethrower",
+  "LIBERATE_THE_SPIRE-FLAMETHROWER.description": " Apply {BurnPower:diff()} [gold]Burn[/gold]. Gain [gold]Block[/gold] equal to [gold]Burn[/gold] on the enemy.",
+  "LIBERATE_THE_SPIRE-FLAMETHROWER.upgraded_description": " Apply {BurnPower:diff()} [gold]Burn[/gold]. Gain [gold]Block[/gold] equal to [gold]Burn[/gold] on the enemy.",
+
   
   
   "LIBERATE_THE_SPIRE-HELLDIVERS_NEVER_DIE.title": "Helldivers Never Die!",
   "LIBERATE_THE_SPIRE-HELLDIVERS_NEVER_DIE.description": "Heal {Heal:diff()}. Shuffle {Cards:diff()} {IfUpgraded:show:[gold]upgraded [/gold]}[gold]{Cards:plural:Stim|Stims}[/gold] into your draw pile.",
   "LIBERATE_THE_SPIRE-HELLDIVERS_NEVER_DIE.upgradeddescription": "Heal {Heal:diff()}. Shuffle {Cards:diff()} {IfUpgraded:show:[gold]upgraded [/gold]}[gold]{Cards:plural:Stim|Stims}[/gold] into your draw pile.",
 
+  "LIBERATE_THE_SPIRE-EXPERIMENTAL_INFUSION.description": "Whenever you play a stim, gain {InfusionPower:diff()} [gold]Block[/gold] and {InfusionPower:diff()} [gold]Plating[/gold].",
+  "LIBERATE_THE_SPIRE-EXPERIMENTAL_INFUSION.upgraded_description": "Whenever you play a stim, gain {InfusionPower:diff()} [gold]Block[/gold] and {InfusionPower:diff()} [gold]Plating[/gold].",
+  "LIBERATE_THE_SPIRE-EXPERIMENTAL_INFUSION.title": "Experimental Infusion",
 
   "LIBERATE_THE_SPIRE-KILL_EM_ALL_.title": "Kill 'em All!!",
   "LIBERATE_THE_SPIRE-KILL_EM_ALL_.description": "Whenever you kill an enemy this turn, add 1 [gold]Stim[/gold] into your hand. It is free to play this turn.",
 
-  "LIBERATE_THE_SPIRE-FOR_SUPER_EARTH___.description": "Whenever you deal damage this turn, gain 1 [gold]Strength[/gold] this turn.",
   "LIBERATE_THE_SPIRE-FOR_SUPER_EARTH___.title": "For Super Earth!!!",
+  "LIBERATE_THE_SPIRE-FOR_SUPER_EARTH___.description": "Whenever you deal damage this turn, gain 1 [gold]Strength[/gold] this turn.",
 
 
+  
+  "LIBERATE_THE_SPIRE-STIM_PISTOL.description": "Heal {Heal:diff()}. Gain {RegenPower:diff()} [gold]Regen[/gold]. Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-STIM_PISTOL.upgraded_description": "Heal {Heal:diff()}. Gain {RegenPower:diff()} [gold]Regen[/gold]. Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "LIBERATE_THE_SPIRE-STIM_PISTOL.title": "Stim Pistol",
   
   
   "LIBERATE_THE_SPIRE-REINFORCE.description": "Not Implemented",
